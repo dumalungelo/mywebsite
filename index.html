@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquor Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4A2C2A;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        nav {
+            margin: 0 auto;
+            display: inline-block;
+        }
+        nav a {
+            color: black;
+            background-color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid black;
+        }
+        nav a:hover {
+            background-color: #f0f0f0;
+        }
+        .hero {
+            padding: 40px 0;
+            background-color: #8B4513;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .product h2 {
+            margin: 10px 0;
+        }
+        .contact {
+            margin: 60px 0 20px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+        }
+        .contact p {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 15px 30px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #777;
+        }
+        iframe {
+            width: 600px;
+            height: 450px;
+            border: 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding: 40px 0;
+            background-color: #3A2F2C;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            border-top: 2px solid #5C4033;
+        }
+        .footer p {
+            margin: 10px 0;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Liquor Store Logo" class="logo">
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>vibes on us!</h1>
+        </section>
+        <section class="products">
+            <div class="product">
+                <img src="images/wine.jpg" alt="Wine">
+                <h2>WINE</h2>
+            </div>
+            <div class="product">
+                <img src="images/beer.jpg" alt="Beer">
+                <h2>BEER</h2>
+            </div>
+            <div class="product">
+                <img src="images/glass.jpg" alt="Spirits">
+                <h2>SPRITS</h2>
+            </div>
+        </section>
+        <section class="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.6845911400096!2d28.06122077420217!3d-26.206936664083056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950e8840519119%3A0xc96fb7f8932ce886!2s28%20Madison%20St%2C%20Jeppestown%2C%20Johannesburg%2C%202043!5e0!3m2!1sen!2sza!4v1750341392009!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <h2>Contact Us</h2>
+                <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                <form>
+                    <input type="text" placeholder="Name*" required>
+                    <input type="email" placeholder="Email address*" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <p>Contact: 084 246 5804</p>
+            <p>Email: dumalungelo27@gmail.com</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        </div>
+    </footer>
+</body>
+</html>
